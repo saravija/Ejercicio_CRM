@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Demo</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+	<title><%= @title_browser.present? ? "#{@title_browser} - Seshat" : "Seshat" %></title>
+ <link rel="stylesheet" type="text/css" href="/assets/application.css">
+</link>
 
+<script src="assets/jquery.js"> </script>
+<script src="assets/jquery_ujs.js"> </script>
+
+  </head>
+<body>
 <%= yield %>
 
 </body>

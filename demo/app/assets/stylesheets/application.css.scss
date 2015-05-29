@@ -1,0 +1,96 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require normalize
+   */
+ 
+@import "breve";
+@font-face {
+  font-family:'Sans-pro';
+  src: url('/fonts/SourceSansPro-It.eot?#iefix') format('embedded-opentype'),  url('/fonts/SourceSansPro-It.otf')  format('opentype'),
+	     url('/fonts/SourceSansPro-It.woff') format('woff'), url('/fonts/SourceSansPro-It.ttf')  format('truetype'), url('/fonts/SourceSansPro-It.svg#/fonts/SourceSansPro-It') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html, body {
+	height:100%;
+	min-height:100%;
+}
+.bg_effect {
+	background-color:rgba(#272334, .2);
+	position:absolute;
+	height:100%;
+	top:0;
+	left:0;
+	width:100%;
+}
+.container {
+	display:block;
+	height:100%;
+	min-height:100%;
+	text-align:center;
+	width:100%;
+	max-width:2024px;
+	.fold {
+		background:url("recursos/fruit.jpg") center top no-repeat;
+		background-size:100%;
+		min-height:100%;
+		z-index:1;
+	}
+	header {
+		width:100%;
+		z-index:9;
+		div.menu {
+			display:inline-block;
+			margin:0 auto;
+			ul {
+				paddin:0;
+				margin:0 auto;
+				li {
+					display:inline-block;
+					padding:0;
+					a {
+						color:white;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+		div.connect {
+			display:inline-block;
+			margin:0 auto;
+			position:absolute;
+			top:0;
+			right:10;
+			ul {
+				paddin:0;
+				margin:0 auto;
+				li {
+					display:inline-block;
+					padding:0;
+					a {
+						color:white;
+						font:normal 20px "Sans-pro", Tahoma;
+						text-decoration:none;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+//Este es el contenedor global (todos los usarios lo puedes ver)
+
+
