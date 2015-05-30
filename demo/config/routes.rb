@@ -6,6 +6,8 @@ Rails.application.routes.draw do
   root 'application#index'
   resources :users
 
+  get "api/:city" => "application#api"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

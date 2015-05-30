@@ -1,3 +1,28 @@
+/*
+
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+@import "breve";
+h1 {
+			color:#9aca40;
+			font:normal 28px "Tahoma", "Arial";
+		}
+
+		thead {
+		border: 2px solid #0d47a1;
+		padding: 0
+	}
+
+	tr {
+		border: 2px solid #0d47a1 ;
+		font:normal 20px "Tahoma", "Arial";
+		
+	}
+
+	td {
+		border: 2px solid #0d47a1;
+		font:normal 20px "Tahoma", "Arial";
+	}

@@ -6,15 +6,17 @@
 		<tr>
 			<td>Nombre</td>
 			<td>Email</td>
-			<td colspan="3">Acciones</td>
+			<td colspan="5">Acciones</td>
 		</tr>
 	</thead>
 	   <% @users.each do |user| %>
 	   <tr>
 	   	 <td><%= user.name %></td>
 	   	 <td><%= user.email %></td>
-	   	 <td><%= link_to "Ver", user_path(user) %></td>
-	   	 <td><%= link_to "Editar", edit_user_path(user) %></td>
+	   	 <article class="button_container">
+				<td><a href="/users/new" class="button">Ver</a></td>
+			</article>
+	   	 	<td><%= link_to "Editar", edit_user_path(user) %></td>
 	   	 <td><%= link_to "Eliminar", user_path(user), method: :delete, data:{confirm: "¿Está seguro?"} %>
 	   	 </td>
 	   </tr>
